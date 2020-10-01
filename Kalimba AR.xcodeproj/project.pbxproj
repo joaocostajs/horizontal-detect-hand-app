@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF963FD524DF01130034A8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963FD424DF01130034A8BB /* AppDelegate.swift */; };
+		EF963FD724DF01130034A8BB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EF963FD624DF01130034A8BB /* art.scnassets */; };
+		EF963FD924DF01130034A8BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963FD824DF01130034A8BB /* ViewController.swift */; };
+		EF963FDC24DF01130034A8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF963FDA24DF01130034A8BB /* Main.storyboard */; };
+		EF963FDE24DF01160034A8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF963FDD24DF01160034A8BB /* Assets.xcassets */; };
+		EF963FE124DF01160034A8BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF963FDF24DF01160034A8BB /* LaunchScreen.storyboard */; };
+		EF963FF124DF017A0034A8BB /* d3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF963FEC24DF01770034A8BB /* d3.mp3 */; };
+		EF96400424DF03080034A8BB /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963FFF24DF03040034A8BB /* Nodes.swift */; };
+		EF96400524DF03080034A8BB /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96400024DF03050034A8BB /* Helpers.swift */; };
+		EF96400624DF03080034A8BB /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96400124DF03060034A8BB /* DrawLine.swift */; };
+		EF96400724DF03080034A8BB /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96400224DF03070034A8BB /* Box.swift */; };
+		EF96400824DF03080034A8BB /* TouchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96400324DF03080034A8BB /* TouchManager.swift */; };
+		EF96400A24DF03390034A8BB /* Hand.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EF96400924DF03390034A8BB /* Hand.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF963FD124DF01130034A8BB /* Kalimba AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kalimba AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF963FD424DF01130034A8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF963FD624DF01130034A8BB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		EF963FD824DF01130034A8BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF963FDB24DF01130034A8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF963FDD24DF01160034A8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF963FE024DF01160034A8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF963FE224DF01160034A8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF963FEC24DF01770034A8BB /* d3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = d3.mp3; sourceTree = "<group>"; };
+		EF963FFF24DF03040034A8BB /* Nodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nodes.swift; sourceTree = "<group>"; };
+		EF96400024DF03050034A8BB /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		EF96400124DF03060034A8BB /* DrawLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
+		EF96400224DF03070034A8BB /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		EF96400324DF03080034A8BB /* TouchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchManager.swift; sourceTree = "<group>"; };
+		EF96400924DF03390034A8BB /* Hand.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Hand.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF963FCE24DF01130034A8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF963FC824DF01130034A8BB = {
+			isa = PBXGroup;
+			children = (
+				EF963FD324DF01130034A8BB /* Kalimba AR */,
+				EF963FD224DF01130034A8BB /* Products */,
+				EF963FFE24DF02BF0034A8BB /* Model */,
+			);
+			sourceTree = "<group>";
+		};
+		EF963FD224DF01130034A8BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF963FD124DF01130034A8BB /* Kalimba AR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF963FD324DF01130034A8BB /* Kalimba AR */ = {
+			isa = PBXGroup;
+			children = (
+				EF963FD424DF01130034A8BB /* AppDelegate.swift */,
+				EF963FD624DF01130034A8BB /* art.scnassets */,
+				EF963FD824DF01130034A8BB /* ViewController.swift */,
+				EF963FDA24DF01130034A8BB /* Main.storyboard */,
+				EF963FDD24DF01160034A8BB /* Assets.xcassets */,
+				EF96400924DF03390034A8BB /* Hand.mlmodel */,
+				EF963FDF24DF01160034A8BB /* LaunchScreen.storyboard */,
+				EF963FE224DF01160034A8BB /* Info.plist */,
+				EF963FEC24DF01770034A8BB /* d3.mp3 */,
+			);
+			path = "Kalimba AR";
+			sourceTree = "<group>";
+		};
+		EF963FFE24DF02BF0034A8BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF96400224DF03070034A8BB /* Box.swift */,
+				EF96400124DF03060034A8BB /* DrawLine.swift */,
+				EF96400024DF03050034A8BB /* Helpers.swift */,
+				EF963FFF24DF03040034A8BB /* Nodes.swift */,
+				EF96400324DF03080034A8BB /* TouchManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF963FD024DF01130034A8BB /* Kalimba AR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF963FE524DF01160034A8BB /* Build configuration list for PBXNativeTarget "Kalimba AR" */;
+			buildPhases = (
+				EF963FCD24DF01130034A8BB /* Sources */,
+				EF963FCE24DF01130034A8BB /* Frameworks */,
+				EF963FCF24DF01130034A8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kalimba AR";
+			productName = "Kalimba AR";
+			productReference = EF963FD124DF01130034A8BB /* Kalimba AR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF963FC924DF01130034A8BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "João Costa";
+				TargetAttributes = {
+					EF963FD024DF01130034A8BB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = EF963FCC24DF01130034A8BB /* Build configuration list for PBXProject "Kalimba AR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF963FC824DF01130034A8BB;
+			productRefGroup = EF963FD224DF01130034A8BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF963FD024DF01130034A8BB /* Kalimba AR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF963FCF24DF01130034A8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF963FD724DF01130034A8BB /* art.scnassets in Resources */,
+				EF963FF124DF017A0034A8BB /* d3.mp3 in Resources */,
+				EF963FE124DF01160034A8BB /* LaunchScreen.storyboard in Resources */,
+				EF963FDE24DF01160034A8BB /* Assets.xcassets in Resources */,
+				EF963FDC24DF01130034A8BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF963FCD24DF01130034A8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF96400824DF03080034A8BB /* TouchManager.swift in Sources */,
+				EF963FD924DF01130034A8BB /* ViewController.swift in Sources */,
+				EF96400424DF03080034A8BB /* Nodes.swift in Sources */,
+				EF963FD524DF01130034A8BB /* AppDelegate.swift in Sources */,
+				EF96400724DF03080034A8BB /* Box.swift in Sources */,
+				EF96400524DF03080034A8BB /* Helpers.swift in Sources */,
+				EF96400624DF03080034A8BB /* DrawLine.swift in Sources */,
+				EF96400A24DF03390034A8BB /* Hand.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF963FDA24DF01130034A8BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF963FDB24DF01130034A8BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF963FDF24DF01160034A8BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF963FE024DF01160034A8BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF963FE324DF01160034A8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF963FE424DF01160034A8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF963FE624DF01160034A8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUT9Y4HT4J;
+				INFOPLIST_FILE = "Kalimba AR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joaojscosta.Kalimba-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF963FE724DF01160034A8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUT9Y4HT4J;
+				INFOPLIST_FILE = "Kalimba AR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joaojscosta.Kalimba-AR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF963FCC24DF01130034A8BB /* Build configuration list for PBXProject "Kalimba AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF963FE324DF01160034A8BB /* Debug */,
+				EF963FE424DF01160034A8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF963FE524DF01160034A8BB /* Build configuration list for PBXNativeTarget "Kalimba AR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF963FE624DF01160034A8BB /* Debug */,
+				EF963FE724DF01160034A8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF963FC924DF01130034A8BB /* Project object */;
+}
