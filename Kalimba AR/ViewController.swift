@@ -127,7 +127,7 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
             
             if let hitResult = results.first{
                 
-                let sphereSize = 0.05
+                let sphereSize = 0.07
                 
                 let sphereNode = SCNNode(geometry: SCNSphere(radius: CGFloat(sphereSize)))
                
@@ -143,10 +143,11 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
                                                  z:hitResult.worldTransform.columns.3.z )
                                                                  
                 sphereNode.geometry?.firstMaterial = reflectiveMaterial
-                sphereNode.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(geometry: SCNSphere(radius: 0.5)))
+                sphereNode.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(geometry: SCNSphere(radius: 0.07)))
                 sphereNode.physicsBody?.categoryBitMask = BitMaskCategory.d3.rawValue
                 sphereNode.physicsBody?.contactTestBitMask = BitMaskCategory.finger.rawValue
                 sphereNode.name = "Sphere"
+                
                 
                 sceneView.scene.rootNode.addChildNode(sphereNode)
                 
@@ -245,13 +246,13 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
     
 //    var bNodeBool = false
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
+        
+        
         if contact.nodeA.physicsBody?.categoryBitMask == 4 {
             bNode = contact.nodeB
         }else {
             bNode = contact.nodeA
         }
-     
-      
     }
 
       var eulerX:Float = 0
@@ -265,6 +266,7 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
         eulerY = frame.camera.eulerAngles.y * -1
         eulerX = frame.camera.eulerAngles.x
         currentBuffer = frame.capturedImage
+        
        
 //        startDetection()
     }
