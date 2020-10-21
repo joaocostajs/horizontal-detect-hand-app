@@ -20,13 +20,39 @@ struct TouchManager{
         let physics = physicsWorld
         let checked =  physics.contactTestBetween(nodeA.physicsBody!, nodeB.physicsBody!,
                                                   options: nil)
+        
+        
+        
+     
+        
+        
         if checked == [] {
             print(checked)
             buttonState = true
         }else{
             print("on")
             contact = true
+            
+            
+           
+            
+            
+            
             if buttonState == true{
+                
+                let scaleUp = SCNAction.scale(by: 1.2, duration: 0.3)
+                let scaleDown = SCNAction.scale(by: 0.8, duration: 0.3)
+                
+                let moveLeft = SCNAction.move(to: SCNVector3(nodeB.position.x - 0.01, nodeB.position.y , nodeB.position.z), duration: 0.03)
+                let moveRight = SCNAction.move(to: SCNVector3(nodeB.position.x + 0.02, nodeB.position.y , nodeB.position.z), duration: 0.03)
+                let moveInitialPosition = SCNAction.move(to: SCNVector3(nodeB.position.x, nodeB.position.y , nodeB.position.z), duration: 0.03)
+                let scales = SCNAction.sequence([moveLeft, moveRight, moveInitialPosition,moveLeft, moveRight, moveInitialPosition,moveLeft, moveRight, moveInitialPosition])
+                
+                nodeB.runAction(scales)
+                
+                
+                
+                
                 if (nodeB.name == "Sphere"){
                     playSound(sound: "d3")
                 }
@@ -43,6 +69,10 @@ struct TouchManager{
 
     func  playSound(sound:String) {
          connectQueue.sync {
+            
+            
+            
+            
         guard let url = Bundle.main.url(forResource: sound, withExtension: "mp3") else { return }
 
         do {
@@ -64,11 +94,6 @@ struct TouchManager{
         }
         }
     }
-    
-    
-    
-   
-
     
 }
 

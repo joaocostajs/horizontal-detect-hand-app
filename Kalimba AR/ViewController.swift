@@ -102,6 +102,7 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
         d3.physicsBody?.categoryBitMask = BitMaskCategory.d3.rawValue
         d3.physicsBody?.contactTestBitMask = BitMaskCategory.finger.rawValue
         sceneView.scene.rootNode.addChildNode(d3)
+        d3.opacity = 0.01
 
 
         bNode = d3
