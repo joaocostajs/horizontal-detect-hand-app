@@ -11,4 +11,4 @@ Combining a CNN, lens of the phone and position obtained from the i created an a
 Check the video below for better understanding the end result and posibilities.
 
 
-[![Watch the video](https://www.joaoworks.com/img/tese/vid1.mov)
+![Demo gif](https://gifs.com/gif/gif-5QYVLX)
