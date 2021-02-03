@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF310CF425C5B7C0006AA910 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310CF325C5B7C0006AA910 /* Notes.swift */; };
+		EF310CF725C5BA1C006AA910 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF310CF625C5BA1C006AA910 /* Material.swift */; };
 		EF963FD524DF01130034A8BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963FD424DF01130034A8BB /* AppDelegate.swift */; };
 		EF963FD724DF01130034A8BB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EF963FD624DF01130034A8BB /* art.scnassets */; };
 		EF963FD924DF01130034A8BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF963FD824DF01130034A8BB /* ViewController.swift */; };
@@ -23,7 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF963FD124DF01130034A8BB /* Kalimba AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kalimba AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF310CF325C5B7C0006AA910 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		EF310CF625C5BA1C006AA910 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		EF963FD124DF01130034A8BB /* Augmented Reality systems for educational support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Augmented Reality systems for educational support.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF963FD424DF01130034A8BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF963FD624DF01130034A8BB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		EF963FD824DF01130034A8BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +58,7 @@
 		EF963FC824DF01130034A8BB = {
 			isa = PBXGroup;
 			children = (
-				EF963FD324DF01130034A8BB /* Kalimba AR */,
+				EF963FD324DF01130034A8BB /* Augmented Reality systems for educational support */,
 				EF963FD224DF01130034A8BB /* Products */,
 				EF963FFE24DF02BF0034A8BB /* Model */,
 			);
@@ -63,12 +67,12 @@
 		EF963FD224DF01130034A8BB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF963FD124DF01130034A8BB /* Kalimba AR.app */,
+				EF963FD124DF01130034A8BB /* Augmented Reality systems for educational support.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EF963FD324DF01130034A8BB /* Kalimba AR */ = {
+		EF963FD324DF01130034A8BB /* Augmented Reality systems for educational support */ = {
 			isa = PBXGroup;
 			children = (
 				EF963FD424DF01130034A8BB /* AppDelegate.swift */,
@@ -81,7 +85,7 @@
 				EF963FE224DF01160034A8BB /* Info.plist */,
 				EF963FEC24DF01770034A8BB /* d3.mp3 */,
 			);
-			path = "Kalimba AR";
+			path = "Augmented Reality systems for educational support";
 			sourceTree = "<group>";
 		};
 		EF963FFE24DF02BF0034A8BB /* Model */ = {
@@ -92,6 +96,8 @@
 				EF96400024DF03050034A8BB /* Helpers.swift */,
 				EF963FFF24DF03040034A8BB /* Nodes.swift */,
 				EF96400324DF03080034A8BB /* TouchManager.swift */,
+				EF310CF325C5B7C0006AA910 /* Notes.swift */,
+				EF310CF625C5BA1C006AA910 /* Material.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF963FD024DF01130034A8BB /* Kalimba AR */ = {
+		EF963FD024DF01130034A8BB /* Augmented Reality systems for educational support */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF963FE524DF01160034A8BB /* Build configuration list for PBXNativeTarget "Kalimba AR" */;
+			buildConfigurationList = EF963FE524DF01160034A8BB /* Build configuration list for PBXNativeTarget "Augmented Reality systems for educational support" */;
 			buildPhases = (
 				EF963FCD24DF01130034A8BB /* Sources */,
 				EF963FCE24DF01130034A8BB /* Frameworks */,
@@ -111,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = "Kalimba AR";
+			name = "Augmented Reality systems for educational support";
 			productName = "Kalimba AR";
-			productReference = EF963FD124DF01130034A8BB /* Kalimba AR.app */;
+			productReference = EF963FD124DF01130034A8BB /* Augmented Reality systems for educational support.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EF963FCC24DF01130034A8BB /* Build configuration list for PBXProject "Kalimba AR" */;
+			buildConfigurationList = EF963FCC24DF01130034A8BB /* Build configuration list for PBXProject "Augmented Reality systems for educational support" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF963FD024DF01130034A8BB /* Kalimba AR */,
+				EF963FD024DF01130034A8BB /* Augmented Reality systems for educational support */,
 			);
 		};
 /* End PBXProject section */
@@ -169,11 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF310CF725C5BA1C006AA910 /* Material.swift in Sources */,
 				EF96400824DF03080034A8BB /* TouchManager.swift in Sources */,
 				EF963FD924DF01130034A8BB /* ViewController.swift in Sources */,
 				EF96400424DF03080034A8BB /* Nodes.swift in Sources */,
 				EF963FD524DF01130034A8BB /* AppDelegate.swift in Sources */,
 				EF96400724DF03080034A8BB /* Box.swift in Sources */,
+				EF310CF425C5B7C0006AA910 /* Notes.swift in Sources */,
 				EF96400524DF03080034A8BB /* Helpers.swift in Sources */,
 				EF96400624DF03080034A8BB /* DrawLine.swift in Sources */,
 				EF96400A24DF03390034A8BB /* Hand.mlmodel in Sources */,
@@ -323,7 +331,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUT9Y4HT4J;
-				INFOPLIST_FILE = "Kalimba AR/Info.plist";
+				INFOPLIST_FILE = "Augmented Reality systems for educational support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,7 +351,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUT9Y4HT4J;
-				INFOPLIST_FILE = "Kalimba AR/Info.plist";
+				INFOPLIST_FILE = "Augmented Reality systems for educational support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF963FCC24DF01130034A8BB /* Build configuration list for PBXProject "Kalimba AR" */ = {
+		EF963FCC24DF01130034A8BB /* Build configuration list for PBXProject "Augmented Reality systems for educational support" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF963FE324DF01160034A8BB /* Debug */,
@@ -368,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF963FE524DF01160034A8BB /* Build configuration list for PBXNativeTarget "Kalimba AR" */ = {
+		EF963FE524DF01160034A8BB /* Build configuration list for PBXNativeTarget "Augmented Reality systems for educational support" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF963FE624DF01160034A8BB /* Debug */,

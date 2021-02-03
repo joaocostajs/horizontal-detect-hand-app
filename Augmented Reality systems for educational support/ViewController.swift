@@ -50,19 +50,20 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
     var boxDebug = Box()
     let nodes = Nodes()
     var touchmanager = TouchManager()
+    var notes = Notes()
+    var material = Material()
     let playground = SCNScene(named: "art.scnassets/playground.scn")!
     
     var startButton:SCNNode = SCNNode()
     
     var bNode = SCNNode()
     var C = SCNNode()
-    var d3 = SCNNode()
+//    var d3 = SCNNode()
     var e3 = SCNNode()
     var f3 = SCNNode()
     var g3 = SCNNode()
     var a3 = SCNNode()
     var bb3 = SCNNode()
-    
     var wrapper = SCNNode()
 
 
@@ -71,7 +72,7 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
         super.viewDidLoad()
         // Set the view's delegate
         sceneView.delegate = self
-        
+        print("hello world")
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
 //        sceneView.debugOptions = .showPhysicsShapes
@@ -79,7 +80,8 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
         sceneView.scene.physicsWorld.timeStep = 1/60
 //        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin]
        
-        
+         wrapper = playground.rootNode
+        print("wrapper", wrapper)
          var detectionTimer = Timer.scheduledTimer(timeInterval: 0.0166, target: self, selector: #selector(ViewController.startDetection), userInfo: nil, repeats: true)
         
         
@@ -96,16 +98,21 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
 //             C.physicsBody?.categoryBitMask = BitMaskCategory.C.rawValue
 //             C.physicsBody?.contactTestBitMask = BitMaskCategory.finger.rawValue
 //             sceneView.scene.rootNode.addChildNode(C)
+        
+        
 //
-        d3 = playground.rootNode.childNode(withName: "d3", recursively: true)!
-        d3.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(geometry: SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0) ))
-        d3.physicsBody?.categoryBitMask = BitMaskCategory.d3.rawValue
-        d3.physicsBody?.contactTestBitMask = BitMaskCategory.finger.rawValue
-        sceneView.scene.rootNode.addChildNode(d3)
-        d3.opacity = 0.01
+        
+        let note = self.notes.notesCreator(sceneView: sceneView, playground: playground)
+        
+//        d3 = playground.rootNode.childNode(withName: "d3", recursively: true)!
+//        d3.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(geometry: SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0) ))
+//        d3.physicsBody?.categoryBitMask = BitMaskCategory.d3.rawValue
+//        d3.physicsBody?.contactTestBitMask = BitMaskCategory.finger.rawValue
+//        sceneView.scene.rootNode.addChildNode(d3)
+//        d3.opacity = 0.01
 
 
-        bNode = d3
+        bNode = note
         sceneView.scene.rootNode.addChildNode(bNode)
         
         
@@ -115,12 +122,13 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
         nodes.caixa.physicsBody?.categoryBitMask = BitMaskCategory.finger.rawValue
         nodes.caixa.physicsBody?.contactTestBitMask = BitMaskCategory.button.rawValue
         nodes.caixa.name = "Finger"
-        
-        
       
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        
+        
         if let touch = touches.first {
             let touchLocation = touch.location(in: sceneView)
             
@@ -134,23 +142,30 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
                
                 
                 // Create material for sphere
-                let reflectiveMaterial = SCNMaterial()
-                reflectiveMaterial.lightingModel = .physicallyBased
-                reflectiveMaterial.metalness.contents = 1.0
-                reflectiveMaterial.diffuse.contents  = self.helpers.colors[Int.random(in:1...self.helpers.colors.count - 1)]
-                reflectiveMaterial.roughness.contents = 0
+//                let reflectiveMaterial = SCNMaterial()
+//                reflectiveMaterial.lightingModel = .physicallyBased
+//                reflectiveMaterial.metalness.contents = 1.0
+//                reflectiveMaterial.diffuse.contents  = self.helpers.colors[Int.random(in:1...self.helpers.colors.count - 1)]
+//                reflectiveMaterial.roughness.contents = 0
+                
                 sphereNode.position = SCNVector3(x: hitResult.worldTransform.columns.3.x,
                                                  y:hitResult.worldTransform.columns.3.y + Float(sphereSize),
                                                  z:hitResult.worldTransform.columns.3.z )
                                                                  
-                sphereNode.geometry?.firstMaterial = reflectiveMaterial
+                sphereNode.geometry?.firstMaterial = material.createMaterial(helpers:self.helpers)
                 sphereNode.physicsBody = SCNPhysicsBody(type: .static, shape: SCNPhysicsShape(geometry: SCNSphere(radius: 0.07)))
                 sphereNode.physicsBody?.categoryBitMask = BitMaskCategory.d3.rawValue
                 sphereNode.physicsBody?.contactTestBitMask = BitMaskCategory.finger.rawValue
                 sphereNode.name = "Sphere"
                 
+
+                wrapper.position = SCNVector3(x: hitResult.worldTransform.columns.3.x,
+                                              y:hitResult.worldTransform.columns.3.y + 0.2,
+                                              z:hitResult.worldTransform.columns.3.z )
                 
-                sceneView.scene.rootNode.addChildNode(sphereNode)
+                sceneView.scene.rootNode.addChildNode(wrapper)
+                
+//                sceneView.scene.rootNode.addChildNode(sphereNode)
                 
               
             }
@@ -241,8 +256,6 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
               
           }
           sceneView.session.run(config)
-
-        
       }
     
 //    var bNodeBool = false
@@ -363,7 +376,6 @@ class ViewController: UIViewController, ARSCNViewDelegate,SCNSceneRendererDelega
                 }
                 // Release currentBuffer to allow processing next frame
                 self.currentBuffer = nil
-                
             }
       
         }
